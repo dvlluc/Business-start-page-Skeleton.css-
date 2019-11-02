@@ -10,7 +10,8 @@
     background-size: cover;
 }
 
-.header .container {
+.header .container,
+.footer .container {
     background-color: transparent;
 }
 
@@ -56,12 +57,18 @@
     margin: 0 0 20px 0;
 }
 
-h1{
+h1 {
     font-size: 3rem;
 }
 
-h2{
+h2 {
     font-size: 2.5rem;
+}
+
+.footer {
+    padding-top: 30px;
+    background-color: black;
+    color: white;
 }
 
 
@@ -71,12 +78,41 @@ h2{
 
 /* стили для ширины крупнее фаблетов */
 /* стили для ширины 550 пикселов и выше */
-@media (min-width: 550px) {}
+@media (min-width: 550px) {
+    .header {
+        padding: 40px 0 50px 0;
+    }
+
+    .logo {
+        position: static;
+        background-color: transparent;
+        font-size: 2rem;
+        line-height: 1;
+    }
+
+    .nav .button {
+        width: auto;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    h2 {
+        font-size: 4.2rem;
+    }
+}
 
 /* стили для ширины крупнее планшетов */
 
 /* стили для ширины 750 пикселов и выше */
-@media (min-width: 750px) {}
+@media (min-width: 750px) {
+    .logo {
+        font-size: 3rem;
+        position: relative;
+        top: 5px;
+    }
+}
 
 /* стили для ширины крупнее компьютерных мониторов */
 /* стили для ширины 1000 пикселов и выше */
